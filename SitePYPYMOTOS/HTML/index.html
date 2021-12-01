@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" type="text/css" href="../CSS/style.css">
+
+	<!-- importação bootstrap -->
+
+
+	<title> PYPYMOTOS</title>
+
+	
+</head>
+<body>
+
+
+
+<div class="faixa" >
+
+	
+	<img src="../IMG/fundosite.jpg">
+	<h5>PYPYMOTOS<br>
+	Motos Usadas</h5>
+	
+
+	<div class="colt"></div>
+	
+	
+
+</div>
+
+
+<main >
+	
+	<section>
+		
+		<img class="imgpt" src="../IMG/biz.jpg">
+		<a href="BIZ.html">BIZ</a>
+
+	</section>
+
+	<section>
+
+		<img class="imgpt" src="../IMG/titan.jpg">
+		<a href="TITAN.html">TITAN</a>
+	
+	</section>
+
+</main>	
+
+<main class="baix" >
+	
+	<section>
+		
+		<img class="imgpt" src="../IMG/bros.jpg">
+		<a href="BROS_NXR160.html">BROS</a>
+
+	</section>
+
+	<section>
+
+		<img class="imgpt" src="../IMG/nc700.jpg">
+		<a href="HONDA_NC700.html">HONDA NC 700</a>
+	
+	</section>
+
+</main>	
+
+<main class="rodap">
+
+		<p class="p">Acompanhe Nossas Ofertas!</p>
+		<section class="model">
+			<img class="icon" src="../IMG/insta.png">
+			<h1>@pypymotos_33</h1>
+		</section>
+		<section class="model">
+				<img class="icon" src="../IMG/face.png">
+				<h1>Pypymotos Oficial</h1>
+		</section>
+		<section class="model">
+				<img class="icon" src="../IMG/celular.png">
+				<h1>91 9 8888-8888 </h1>
+		</section>
+		
+	
+
+		<p>Faça já o seu cadastro e adquira sua moto!</p>
+		<button class="open-button" onclick="openForm()">Cadastre-se</button>
+
+		<div class="form-popup" id="myForm">
+  <form action="../BASEDADOS/novo_usuario.php" method="POST" class="form-container">
+    <h1>Cadastro</h1>
+    <label for="nome"><b>Nome Completo</b></label>
+
+    <input type="text" placeholder="Nome" name="nome" required>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" maxlength="10" name="senha" required>
+
+    <button type="submit" class="btnx">Enviar Dados</button>
+    <button type="button" class="btnx cancel" onclick="closeForm()">Sair</button>
+  </form>
+
+  
+</div>
+	
+
+	
+
+</main>
+	
+
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+</body>
+</html>
